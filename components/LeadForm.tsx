@@ -72,9 +72,8 @@ export default function LeadForm() {
 
     setIsSubmitting(true);
 
-    try {
-      const { error } = await supabase.from('leads').insert([
-        {
+    try {console.log("Lead submitted:", formData);
+alert("Lead submitted successfully!");
           full_name: formData.fullName,
           mobile_number: formData.mobileNumber,
           service_type: formData.serviceType,
