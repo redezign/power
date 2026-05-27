@@ -7,7 +7,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { fadeInUp, staggerContainer, viewportOnce } from '@/lib/animations'
+import { fadeInUp, staggerContainer, viewportOnce } from '@/lib/animations';
+import { supabase } from '@/lib/supabase';
 
 const categories = [
   { value: 'battery_manufacturer', label: 'Battery Manufacturer' },
